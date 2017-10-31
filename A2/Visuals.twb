@@ -1,0 +1,2097 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='10.4'>
+      <aliases enabled='yes' />
+      <column caption='Combined dairy' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+      </column>
+    </datasource>
+    <datasource caption='UK Food trends (UK Food trends)' inline='true' name='federated.0sdvshp0l2euaf1bliizj1ed0tgn' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='UK Food trends' name='excel-direct.17ironv0gklos114s8kok01k5isd'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Chi/OneDrive - University of Calgary/CPSC 583/UK Food trends.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.17ironv0gklos114s8kok01k5isd' name='UK Food trends' table='[&apos;UK Food trends$&apos;]' type='table'>
+          <columns gridOrigin='A1:AU338:no:A1:AU338:0' header='yes' outcome='2'>
+            <column datatype='integer' name='code' ordinal='0' />
+            <column datatype='string' name='desc1' ordinal='1' />
+            <column datatype='string' name='desc2' ordinal='2' />
+            <column datatype='string' name='desc3' ordinal='3' />
+            <column datatype='string' name='desc4' ordinal='4' />
+            <column datatype='string' name='unit' ordinal='5' />
+            <column datatype='integer' name='1974' ordinal='6' />
+            <column datatype='integer' name='1975' ordinal='7' />
+            <column datatype='integer' name='1976' ordinal='8' />
+            <column datatype='integer' name='1977' ordinal='9' />
+            <column datatype='integer' name='1978' ordinal='10' />
+            <column datatype='integer' name='1979' ordinal='11' />
+            <column datatype='integer' name='1980' ordinal='12' />
+            <column datatype='integer' name='1981' ordinal='13' />
+            <column datatype='integer' name='1982' ordinal='14' />
+            <column datatype='integer' name='1983' ordinal='15' />
+            <column datatype='integer' name='1984' ordinal='16' />
+            <column datatype='integer' name='1985' ordinal='17' />
+            <column datatype='integer' name='1986' ordinal='18' />
+            <column datatype='integer' name='1987' ordinal='19' />
+            <column datatype='integer' name='1988' ordinal='20' />
+            <column datatype='integer' name='1989' ordinal='21' />
+            <column datatype='integer' name='1990' ordinal='22' />
+            <column datatype='integer' name='1991' ordinal='23' />
+            <column datatype='integer' name='1992' ordinal='24' />
+            <column datatype='integer' name='1993' ordinal='25' />
+            <column datatype='integer' name='1994' ordinal='26' />
+            <column datatype='integer' name='1995' ordinal='27' />
+            <column datatype='integer' name='1996' ordinal='28' />
+            <column datatype='integer' name='1997' ordinal='29' />
+            <column datatype='integer' name='1998' ordinal='30' />
+            <column datatype='integer' name='1999' ordinal='31' />
+            <column datatype='integer' name='2000' ordinal='32' />
+            <column datatype='integer' name='2001' ordinal='33' />
+            <column datatype='integer' name='2002' ordinal='34' />
+            <column datatype='integer' name='2003' ordinal='35' />
+            <column datatype='integer' name='2004' ordinal='36' />
+            <column datatype='integer' name='2005' ordinal='37' />
+            <column datatype='integer' name='2006' ordinal='38' />
+            <column datatype='integer' name='2007' ordinal='39' />
+            <column datatype='integer' name='2008' ordinal='40' />
+            <column datatype='integer' name='2009' ordinal='41' />
+            <column datatype='integer' name='2010' ordinal='42' />
+            <column datatype='integer' name='2011' ordinal='43' />
+            <column datatype='integer' name='2012' ordinal='44' />
+            <column datatype='integer' name='2013' ordinal='45' />
+            <column datatype='integer' name='2014' ordinal='46' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[code]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc1]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>desc1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc2]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>desc2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc3]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>desc3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc4</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desc4]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>desc4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[unit]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>unit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1974</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1974]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1974</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1975</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1975]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1975</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1976</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1976]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1976</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1977</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1977]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1977</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1978</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1978]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1978</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1979</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1979]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1979</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1980</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1980]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1980</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1981</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1981]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1981</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1982</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1982]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1982</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1983</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1983]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1983</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1984</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1984]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1984</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1985</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1985]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1985</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1986</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1986]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1986</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1987</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1987]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1987</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1988</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1988]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1988</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1989</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1989]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1989</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1990</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1990]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1990</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1991</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1991]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1991</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1992</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1992]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1992</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1993</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1993]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1993</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1994</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1994]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1994</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1995</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1995]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1995</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1996</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1996]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1996</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1997</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1997]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1997</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1998</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1998]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1998</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1999</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1999]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>1999</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2000</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2000]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2000</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2001</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2001]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2001</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2002</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2002]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2002</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2003</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2003]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2003</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2004</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2004]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2004</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2005</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2005]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2005</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2006</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2006]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2006</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2007</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2007]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2007</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2008</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2008]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2008</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2009</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2009]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2009</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2010</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2010]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2010</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2011</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2011]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2011</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2012]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2012</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2013]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2013</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2014]</local-name>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias>2014</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[UK Food trends]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AU338:no:A1:AU338:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[1974]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1975]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1976]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1977]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1978]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1979]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1980]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1981]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1982]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1983]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1984]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1985]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1986]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1987]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1988]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1989]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1990]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1991]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1992]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1993]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1994]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1995]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1996]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1997]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1998]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[1999]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2000]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2001]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2002]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2003]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2004]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2005]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2006]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2007]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2008]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2009]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2010]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2011]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2012]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2013]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[2014]' role='measure' type='quantitative' />
+      <column datatype='string' name='[General food group (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[desc1]' new-bin='true'>
+          <bin default-name='false' value='&quot;Baked goods&quot;'>
+            <value>&quot;Biscuits and crispbreads&quot;</value>
+            <value>&quot;Bread&quot;</value>
+            <value>&quot;Cakes, buns and pastries&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Dairy&quot;'>
+            <value>&quot;Cheese&quot;</value>
+            <value>&quot;Milk and milk products excluding cheese&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Drinks&quot;'>
+            <value>&quot;Beverages&quot;</value>
+            <value>&quot;Soft drinks&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Fuit and vegetables&quot;'>
+            <value>&quot;Fresh and processed fruit&quot;</value>
+            <value>&quot;Fresh and processed fruit and vegetables, excluding potatoes&quot;</value>
+            <value>&quot;Fresh and processed fruit and vegetables, including potatoes&quot;</value>
+            <value>&quot;Fresh and processed potatoes&quot;</value>
+            <value>&quot;Fresh and processed vegetables, excluding potatoes&quot;</value>
+            <value>&quot;Fresh and processed vegetables, including potatoes&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Meat&quot;'>
+            <value>&quot;Carcase meat&quot;</value>
+            <value>&quot;Fish&quot;</value>
+            <value>&quot;Non-carcase meat and meat products&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Code' datatype='integer' name='[code]' role='dimension' type='ordinal' />
+      <column caption='General food group' datatype='string' name='[desc1]' role='dimension' type='nominal' />
+      <column caption='subgroup' datatype='string' name='[desc2]' role='dimension' type='nominal' />
+      <column caption='Food' datatype='string' name='[desc3]' role='dimension' type='nominal' />
+      <column caption='Food type' datatype='string' name='[desc4]' role='dimension' type='nominal' />
+      <column caption='Unit' datatype='string' name='[unit]' role='dimension' type='nominal' />
+      <column-instance column='[1979]' derivation='Attribute' name='[attr:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Attribute' name='[attr:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Attribute' name='[attr:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Attribute' name='[attr:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Attribute' name='[attr:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Attribute' name='[attr:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Attribute' name='[attr:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Attribute' name='[attr:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[desc1]' derivation='Attribute' name='[attr:desc1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[1974]' derivation='Avg' name='[avg:1974:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1979]' derivation='Avg' name='[avg:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Avg' name='[avg:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Avg' name='[avg:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Avg' name='[avg:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Avg' name='[avg:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Avg' name='[avg:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Avg' name='[avg:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Avg' name='[avg:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1979]' derivation='Count' name='[cnt:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Count' name='[cnt:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Count' name='[cnt:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Count' name='[cnt:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Count' name='[cnt:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Count' name='[cnt:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Count' name='[cnt:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Count' name='[cnt:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1979]' derivation='Max' name='[max:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Max' name='[max:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Max' name='[max:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Max' name='[max:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Max' name='[max:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Max' name='[max:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Max' name='[max:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Max' name='[max:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1980]' derivation='None' name='[none:1980:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1985]' derivation='None' name='[none:1985:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[desc1]' derivation='None' name='[none:desc1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[1979]' derivation='Stdev' name='[std:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Stdev' name='[std:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Stdev' name='[std:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Stdev' name='[std:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Stdev' name='[std:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Stdev' name='[std:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Stdev' name='[std:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Stdev' name='[std:2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1974]' derivation='Sum' name='[sum:1974:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1975]' derivation='Sum' name='[sum:1975:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1976]' derivation='Sum' name='[sum:1976:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1977]' derivation='Sum' name='[sum:1977:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1978]' derivation='Sum' name='[sum:1978:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1979]' derivation='Sum' name='[sum:1979:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1980]' derivation='Sum' name='[sum:1980:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1981]' derivation='Sum' name='[sum:1981:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1982]' derivation='Sum' name='[sum:1982:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1983]' derivation='Sum' name='[sum:1983:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1984]' derivation='Sum' name='[sum:1984:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1985]' derivation='Sum' name='[sum:1985:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1986]' derivation='Sum' name='[sum:1986:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1987]' derivation='Sum' name='[sum:1987:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1988]' derivation='Sum' name='[sum:1988:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1989]' derivation='Sum' name='[sum:1989:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1990]' derivation='Sum' name='[sum:1990:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1991]' derivation='Sum' name='[sum:1991:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1992]' derivation='Sum' name='[sum:1992:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1993]' derivation='Sum' name='[sum:1993:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1994]' derivation='Sum' name='[sum:1994:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1995]' derivation='Sum' name='[sum:1995:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1996]' derivation='Sum' name='[sum:1996:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1997]' derivation='Sum' name='[sum:1997:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1998]' derivation='Sum' name='[sum:1998:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[1999]' derivation='Sum' name='[sum:1999:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2000]' derivation='Sum' name='[sum:2000:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2001]' derivation='Sum' name='[sum:2001:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2002]' derivation='Sum' name='[sum:2002:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2003]' derivation='Sum' name='[sum:2003:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2004]' derivation='Sum' name='[sum:2004:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2005]' derivation='Sum' name='[sum:2005:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2006]' derivation='Sum' name='[sum:2006:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2007]' derivation='Sum' name='[sum:2007:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2008]' derivation='Sum' name='[sum:2008:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2009]' derivation='Sum' name='[sum:2009:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2010]' derivation='Sum' name='[sum:2010:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2011]' derivation='Sum' name='[sum:2011:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2012]' derivation='Sum' name='[sum:2012:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2013]' derivation='Sum' name='[sum:2013:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[2014]' derivation='Sum' name='[sum:2014:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.307512' measure-ordering='alphabetic' measure-percentage='0.638498' parameter-percentage='0.0539906' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1982:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2002:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:desc1:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1974:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:desc1:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1974:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1994:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2014:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1978:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1998:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1977:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:1985:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1985:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2006:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1983:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2003:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1999:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1991:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2012:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1993:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1995:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1989:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2010:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:1980:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1980:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2000:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1986:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2007:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1987:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2008:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1990:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2011:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1992:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2013:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1976:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2004:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1979:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1981:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2001:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1975:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1996:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1988:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2009:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[attr:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[avg:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[cnt:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[max:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[std:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1984:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2005:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1997:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:desc1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Eggs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alcoholic drinks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Other cereals and cereal products&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cakes, buns and pastries&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fresh and processed fruit&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fats&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Carcase meat&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Milk and milk products excluding cheese&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Beverages&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Other food and drink&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fresh and processed vegetables, excluding potatoes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cheese&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fresh and processed fruit and vegetables, excluding potatoes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fresh and processed fruit and vegetables, including potatoes&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fresh and processed vegetables, including potatoes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Non-carcase meat and meat products&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fish&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Confectionery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Biscuits and crispbreads&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Soft drinks&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fresh and processed potatoes&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Flour&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bread&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sugar and preserves&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:desc1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Eggs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alcoholic drinks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Other cereals and cereal products&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cakes, buns and pastries&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fresh and processed fruit&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fats&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Carcase meat&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Milk and milk products excluding cheese&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Beverages&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Other food and drink&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fresh and processed vegetables, excluding potatoes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cheese&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fresh and processed fruit and vegetables, excluding potatoes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fresh and processed fruit and vegetables, including potatoes&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fresh and processed vegetables, including potatoes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Non-carcase meat and meat products&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fish&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Confectionery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Biscuits and crispbreads&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Soft drinks&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fresh and processed potatoes&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Flour&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bread&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sugar and preserves&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Overall trends at 5 year increments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='UK Food trends (UK Food trends)' name='federated.0sdvshp0l2euaf1bliizj1ed0tgn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sdvshp0l2euaf1bliizj1ed0tgn'>
+            <column datatype='integer' name='[1974]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[1979]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[1984]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[1989]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[1994]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[1999]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[2004]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[2009]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[2014]' role='measure' type='quantitative' />
+            <column datatype='string' name='[General food group (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[desc1]' new-bin='true'>
+                <bin default-name='false' value='&quot;Baked goods&quot;'>
+                  <value>&quot;Biscuits and crispbreads&quot;</value>
+                  <value>&quot;Bread&quot;</value>
+                  <value>&quot;Cakes, buns and pastries&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Dairy&quot;'>
+                  <value>&quot;Cheese&quot;</value>
+                  <value>&quot;Milk and milk products excluding cheese&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Drinks&quot;'>
+                  <value>&quot;Beverages&quot;</value>
+                  <value>&quot;Soft drinks&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Fuit and vegetables&quot;'>
+                  <value>&quot;Fresh and processed fruit&quot;</value>
+                  <value>&quot;Fresh and processed fruit and vegetables, excluding potatoes&quot;</value>
+                  <value>&quot;Fresh and processed fruit and vegetables, including potatoes&quot;</value>
+                  <value>&quot;Fresh and processed potatoes&quot;</value>
+                  <value>&quot;Fresh and processed vegetables, excluding potatoes&quot;</value>
+                  <value>&quot;Fresh and processed vegetables, including potatoes&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Meat&quot;'>
+                  <value>&quot;Carcase meat&quot;</value>
+                  <value>&quot;Fish&quot;</value>
+                  <value>&quot;Non-carcase meat and meat products&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='General food group' datatype='string' name='[desc1]' role='dimension' type='nominal' />
+            <column-instance column='[1974]' derivation='Sum' name='[sum:1974:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1979]' derivation='Sum' name='[sum:1979:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1984]' derivation='Sum' name='[sum:1984:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1989]' derivation='Sum' name='[sum:1989:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1994]' derivation='Sum' name='[sum:1994:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1999]' derivation='Sum' name='[sum:1999:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2004]' derivation='Sum' name='[sum:2004:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2009]' derivation='Sum' name='[sum:2009:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[2014]' derivation='Sum' name='[sum:2014:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1974:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1979:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1984:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1989:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1994:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:1999:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2004:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2009:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[sum:2014:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='alphabetic' column='[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names]' direction='ASC' />
+          <sort class='manual' column='[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[General food group (group)]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Dairy&quot;</bucket>
+              <bucket>&quot;Fuit and vegetables&quot;</bucket>
+              <bucket>&quot;Drinks&quot;</bucket>
+              <bucket>&quot;Baked goods&quot;</bucket>
+              <bucket>&quot;Flour&quot;</bucket>
+              <bucket>&quot;Sugar and preserves&quot;</bucket>
+              <bucket>&quot;Alcoholic drinks&quot;</bucket>
+              <bucket>&quot;Other food and drink&quot;</bucket>
+              <bucket>&quot;Fats&quot;</bucket>
+              <bucket>&quot;Other cereals and cereal products&quot;</bucket>
+              <bucket>&quot;Meat&quot;</bucket>
+              <bucket>&quot;Confectionery&quot;</bucket>
+              <bucket>&quot;Eggs&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names]' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[Multiple Values]</rows>
+        <cols>([federated.0sdvshp0l2euaf1bliizj1ed0tgn].[General food group (group)] / [federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Every 2 years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='0.75' source-height='30'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[General food group (group)]</field>
+                </fields>
+                <multibucket>
+                  <bucket>%all%</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[:Measure Names]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[Multiple Values]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:1980:qk]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:1985:qk]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:desc1:nk]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:desc2:nk]</field>
+            <field>[federated.0sdvshp0l2euaf1bliizj1ed0tgn].[none:desc4:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      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
+      caymhd+8tY2DFY3dD6jJSk3g7x+YxoQROT2W7ztPJhBCCHFVNE1jWF4a339iHk/ePYnMlM6T
+      i/oWP39cvPu85R3Xu4BCCCGuLZfT4O4bS5hckstfV+xj77E6po/OP285CQAhhBiANA3yMpP4
+      0gPTafWHSE3wnLeMBIAQQgxgDkMnI/nC40wyBiCEEDYlASCEEDYlASCEEDYlASCEEDbVJweB
+      Y8EWdh6sZvKE0ehdtzAHm6vZuG0v0a6npLkS05kxbSpeWtl1qJkJY4o631ARdm7dz5ipE3Bd
+      owcpCyHEQNCnAsCKhdm5filrtuyhQctl4rjR6EbnezWHd+LIncq80uyeH/I3sWl7eWcAKIuy
+      DYuoUCOYgBz8hRDiUvpUF1A40ExrLIXPPvkomb6e81Y0NYRIy/Re8vOtNeXsqHFy64yRlz0f
+      thBC2FWfagF4k3OYNz8HgjXnvGNxqrmJpIrD7Gv0kJSWSf6gTAz9zFE+Fmxh5bo9zL7lHryO
+      M7kWiUSwLKvH/6PRKIFA4FpXR4hLMk2TUCgU72IIG+tTAXBxGrNvv5f2YBRlmdQc2sH23Qnc
+      uWAmbqC56hDvvdtIyDeUvLSerQSHo2cVY7EYAG63+3oVXogL0nUdl8sl+6KIm34TACkZg0jp
+      +l9BQR7vv/ZXqpomMswHafnF3H3fTSx7eyH7T45k7OC07vmvdb1nL5eu6+i6jmEY17kOQvSk
+      aZrsiyKu+tQYwEVZJuFojDMTV1sotB5dQLrTx9xb57Nr2TvUtoex1RzXQghxBfpUC6Cl+hCb
+      9x4DM4hudrBs6RK8idnMmD6S5uY26iuOUtPcQWpWHiMmzSQvzQdhFxnpnXP7uxKzufvO2WxZ
+      vwrn3FvJ9PaPfBNCiHiQB8IIESfyQBgRb3KKLIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQ
+      NiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQ
+      NiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQ
+      NiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQNiUBIIQQ
+      NiUBIIQQNiUBIIQQNiUBcAGmZdERjKCUindRhBDimnHEuwB9jWUpnnt1E3uO1jFn4hAemjuG
+      BK8r3sUSQoheJy2Ac1hKsXF/FY1tQV5fXcbXfrWYrWXVmJYV76IJIUSvkgA4h6FrPHn3JNKS
+      PADUNHbwwz+u5pevbaamsV26hYQQA4ambHZECwQCxGIxkpOTL7qMUorK+nZeXr6XDfsqiZmd
+      Z/+ZKT4evHk08yYNxeOS3jNxdcrLyykoKMDn88W7KMKmJAAuIRIz2XKgiheX7KG6oR0AXdcY
+      NyybT90+gRH56de6uGIAkwAQ8SYB8AGUglZ/iL+u2MeizUe6WwM+j5P7ZpZw/02j8Lqd17LI
+      YoCSABDxJgFwmZRSHKxo5Pfv7uBQZSOnv7XC7BSeuHsi44cNwjBkSEVcPgkAEW8SAB9SKBLj
+      vU2HeH11Ga3+MAAOQ+fmiUN4+JaxZKcm9GZxxQAmASDiTQLgClWcauXFJbu7LhHt/AqzUxN4
+      5JZSZo8vxO2UQWJxaRIAIt4kAK5CJGqyfu9J/rxsL7VNHUDnZaSTS3J59NZxFOWkomnaVW9H
+      DEwSACLeJACuklKKprYgr6zcz6LNR7C6vs4kr4v7Zo3k/jmjcDmMXtmWGFgkAES8SQD0EqUU
+      +4/X89u3t3O8tqV7kHhITgpP3TeVUYWZ6Lq0BsQZEgAi3iQAelkwHGXhuoO8veEQbV2DxG6n
+      wf2zR3HvrBKSfO5rsl3R/0gAiHiTALgGlFIcrWnhpSV72FZe3d0aGDMki8/cOYGSwRkyNiAk
+      AETcSQBcQ6FIjKVbj/LnZXvpCEYASPS6eHDuGO6eWSxjAzYnASDiTQLgGlNKcby2hV8v3MaB
+      Ew0A6JrG+BGD+MK9U8jLTLou5RB9jwSAiDcJgOtAKUU0ZvLG2oO8vrqMQDgKdLYGPn3HBG6e
+      WITTYSC9QvYiASDiTQLgOiuraOC3b23ncFUTABpwQ2kBn71zIoPSE+NSJhEfEgAi3iQA4qA9
+      EObVVQd4b9NhwpEYANlpCXzqtvHcOHYwDplTyBYkAES8XbMAMGNR0B0Yfeza974QAND53OGd
+      h07x3+/t4GRdGwBOh87cCUU8eus40pO9cS2fuPYkAES89eqpplIW25a+zOcffZA773yIlQdP
+      8rOvPcXW6lBvbmZAMHSdySU5/PDJ+dw2bRgA0ZjF0m1HeeZ3y9lxqEaePiaEuKZ6NQCaypbw
+      o+dX8+Qz/8Jd4wcRMV1MLs1nzfo9vbmZAUPTNFKTPPzdR6fz7cdmk5XaeSZY3dDO9/57Fc+/
+      u4P2QATJASHEtdCrAVBZfpCS2XcyY0whzq5+bJfLQUdHe29uZkCaMbqAf/7cLdw0vhCHoaOA
+      hevK+f+eX8HeY3VYlqSAEKJ39WoADBkzjqNrFrJi816aO0KcOrGP15dsY+zYkt7czICkaZ0D
+      wV9+cAZPfWQKGV1jAEerm/nnF9fw8vK9+LtuJhNCiN7Qq4PASkXZ+PafeeH1RRw9UU1yzlBu
+      uv1jPPXoXbiNvjEY3FcGgS9FKUVVQzu/f2cH28trgM6AKC7I4Im7JjKqMEvuGRgAZBBYxFuv
+      XwWklCISChKKRDAcbnw+D/plHq2UUlixIDvWLmVFeZCvfu7jOLquIor6G1myZCW6N4Fg0GTa
+      nJvJT09AC1Twh3eP8KkH5wEQbqngz29t55OPfQTXBbbbHwLgtHA0xvubjvDnZXsIhjsvF/W4
+      HNw6dRgPzy8l0euSOYX6MQkAEW+9+tiqUHszdc09+/ubGiEhJYOMlA9+VGLEX8+f/+dFMopH
+      QcyE09GkTNYveZ+8SXcyYUg6oeYTvL5kBR/92N14lUko1Nk1YkX9LH5/JbNu+9gFD/79jdvp
+      4COzRzJxxCB+9/YO9h6rIxSJ8db6cjYdqOIzd0xg+uh8nDKnkBDiCvRqABzd9Bbf++07Z71i
+      caqmgQef/me+9MCNH/h5w5XERx7/AmmuNo4eW9n9ugo3c9LvZWpeGhrgTc0jXV9PXUuIIZ7T
+      C5kc2LIW34gbGJ59Jmwsy+qxDcuysCwL0zSvvKLXWUFWEs88Potl247xysr9NHeEqWv287O/
+      bOCG0gIevXUsuXIXcb+jlOp3+6IYWHo1AEbNe5Q/znnkrFcs/vvH32HilLGXVxiXlzQXEGzr
+      8Xos4AeXD6ej66xec5LiNWgNhsAD/uZTbN+8lkN1Bh+5ZwRn33sWi8V6hEAsFiMajRIOh6+w
+      lvEzb+JgxgxJ53/XHGLDvkqipsX6vSfZf7yOe24YzvxJRXjd8izi/sKyLCKRCLoud36L+OjV
+      o4VuGLiMnt0R44tzWLV+DzOGzLzyFWsaqDM9QtB59nS6/9vh9pKWmkzsWCWxnif8uFyuHv+3
+      LAtd1/ttv+tQn48vP5jOrPGFvLh4Nyfr2mjpCPPSsgPsOFLP47dNYFShPG+gPzAMA4/H02/3
+      RdH/9WoAVO9bx5urd5/1isW2FauY+OiCq1qvIyEJI+onGrVwu3SUCtMSNCn0dfb/uH3JFJVM
+      hEAL76/cyv0LpnUPHg9ETofBjNH5lBZl8fqaMt5YU4ZpKfYdq+efnl/B7dNH8MkFY/G4HBIE
+      QoiL6tW2p2Y4cLlcZ/3xsOCxr/HkPZOvbr2uVIZnKnYfqcFSitbqY7Q7sslK8ZxZRtMYOvEm
+      ckJHWLfv5ICfRkHTNJJ8bh6/bTw//dtbGVOUha5phKMmC9cd5OlfLmLTgSqiMelfFkJcWJ+a
+      DbSl+hCb9x4DM0T5sVMUDx+CNzGbGbMm4ox0sHHdBtojFpbmZuqNN5CV5IFgNf+74gQP3NU5
+      yGxF2nj9tXeY+5GHyfSdn2/96TLQDyMcibF4yxFeX1NGY1sQAEPXmDWukIfnl5KfmSStgT5G
+      LgMV8dYLARBj7cK/sLG89mKboHT2Pdx5w8ir20wvGagBAJ3jItUN7by8fB9r9lR0Tx+Rnuzl
+      gTmjuW3aMNxOGSTuKyQARLz1wtFAIyk9i7y8i/UmaaQmei7ynuhNmqaRn5XM339sBjeUFvDH
+      xbupbminqS3I79/Zzqb9lXzq9gkUF6RLa0AI0dtdQAplKcxzrr3XdB2jj1zqNpBbAGdTStHm
+      D/Na14NnIl1jAS6HQUlhBsX56WSm+MhM9ZGV4iMjxdd1ZzFoaN1TTUhQXDvSAhDx1qsBYIab
+      +O1Pfsi7W8rwB6L4fG6CwSj3fP7/8PTHZ/fWZq6KXQLgbOUnG/n9uzs4WNFwyamlPS4HmSk+
+      MlK8ZCT7yEzxnhUSCSR6XTgdOk6HgdPRd0K9v5IAEPHWqx3ClZvfYVltMt/+2hd44ZXNfP1b
+      n+fPz/07C+ZM6M3NiA+pZHAG33/iZt7beJj3Nx+mPRAhGI5injPFdCgSo7K+jcr6tguux+My
+      SEnwkJLgJiXRw/D8dOZPLiI7NUFaCkL0Q70aAE2NTRSPm0ZJYSYul4PMQYXMHZ/Fyk2HGPuR
+      q7sUVFyd0/MKzZtcRJs/jD8YpbkjRH2Ln4bWAA2tAVo7QrQFIrT5w3QEI8TMnl15oYhJKOLn
+      VLMfgC1l1SzbepTbpg/n1qnDSE30SBAI0Y/0agDkDi6gYsNxfOljMVuPs3zVWk7uP0pkgjwS
+      si/QNK3rDP78QXmlFDHTIhw1CUdihKIxWjvCNLQGqG8JUN/ip7k9SFN7iOb2IPUtAQDqWwP8
+      ackelm07xr2zSlgwZRgel1xpJER/0LtjAJFmFr2zkdl3386xda/x278sxjOomC9/9WkK01wf
+      vILrwI5jAL1BKYWlFJalMC1FeyDCW+sOsnjrke6pqjUN8jOTeWjeGGaWDsbp0KVFcAkyBiDi
+      rVcCIBYJETbB53H3+V94CYDeoxScaurgtdX7WbfnJP5QtPu94XlpfHx+KZOKc+Teg4uQABDx
+      1isBUL1nOT947i8Ujp3GLXNnM2J4EWmJ3j751CoJgN6nlOJYTQuvrT7AlgNVhKOdl5xqwPgR
+      g3hgzmhKi7LkuQXnkAAQ8dYrARANtlG2bw9rVi5l2+5yOmIGI8dPY+7sG5gwfiyZXc+37Qsk
+      AK4d07I4cLyBN9aWseNQbfcgssthMLkkl4/MHsmowkz0ATxR34chASDirZefCawI+duorT7J
+      5rWr2bJjB0dONnPvF77DE3f2jauAJACuvUjUZO+xOl5duZ99x+u7X/e6HEwbnc/H541hcHZK
+      HEvYN0gAiHjr1c5ZTQNPQhL5Q4YzLRKgI9DB0cOLqKlr6c3NiD7O5ew84x83LJstZdX8Zdle
+      KupaCUZirN51gs0Hqpg/uYiP3jSarFRfnx83EmKg6pUWgGVGaWlq5Mj+baxYtZ7tO/cQcaYx
+      c+5cZs+aw9RxI3D0kZtGpQVw/UWiJqt2neCNNWVUNbR1342c4HFy54wR3Dp1OJmpPhxGH9lJ
+      rhNpAYh465UAOFW2mq8/82+o5DxmzZvPjKmTKS0ZiruvHPXPIgEQP+2BMCt2HOft9eXdN5NB
+      5xQUpUVZjCzMYFRhJrkZSaQnewd8IEgAiHjrlQAItjVQ2eCnsLAAdx+/0kMCIP4aWwMs3nqU
+      RZsP09ze8yZBTYO0JC856YmMHpLJyMGZDBmUQlaab8DNPSQBIOKtTz0Q5nqQAOgblFKcavaz
+      ZMsRth+q5URty3lzEwHomkai10Vmio9RQzIZU5RFSUE62Wn9f/4hCQARbxIAIq5OT0HREYxw
+      8GQj+4/Xs/94PRWnWonGLKxzdk9NA6dhkJniY/SQTMYMzaK0KIuMFB/G6ctLFaiudXduAxQK
+      pcCyFJGoSSgaIxyNEY6YPf5ubg8RCEeZWTqYvKwk9GsYMhIAIt4kAESf1B4IU36ykbKKBvaf
+      aKCqvo2OQIToORPUnZadlkBuRiKGrhOJxjrnNIqaRLr+hLteO3eCu4vxuBwsmDqMO6YPJy8z
+      6Zp0P0kAiHiTABB9nlKKVn+Yk6daOXiykQMnGqisb6OxNXDRQOgtXreDmWMH87E5o8nLTO7V
+      u9slAES8SQCIfsfqetpZXbOfQ5VN7Dtex4naVlr9IRyGjtMwejy4xukwcBpn/u92OXA7DTxO
+      B26Xgfusv10Og33H69l5qJa6ljNXKmWn+rh12nDmTSoiM6V37l2QABDxJgEg+j3LUgTCUcLR
+      GLqmoevaWX/rGPqZ1zTtgx9zqZSiuT3E2j0VvLPhELVNHd3vpSd5mTNhCPfMLCYrNeGqyi0B
+      IOJNAkCIi1BKEY6arN1dwSsr91HbdKZF4HU5mDNxCPfOLLniMQIJABFvEgBCXIa6Fj/vbTjE
+      ql0naGwLdr/udOjcMKaAe24sYXh+2oea8VQCQMSbBIAQl0kpaGwLsHLncZZuPUpN45muIYeh
+      M7k4l7tuGMGYoVmX9QwECQARbxIAQlyB5vYQG/aeZNGWw5yobeX0L5HToTOqMJM7po9g2qg8
+      3Jd4PKYEgIg3CQAhrpBSCn8oyraD1SxcV87hqqbu9wxdY0hOKt/85Cxy0hMv+HkJABFvA2ty
+      FSGuI61rmoo5E4bwk6cW8N1PzaF0aBaGoWNaiqPVzWwpq453MYW4KHlYqxBXSdM0HIbGtFF5
+      TC7JYd+xet7deIiOYIQbxuTHu3hCXJQEgBC9yNB1xg8fxPjhg+JdFCE+kHQBCSGETUkACCGE
+      TUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGE
+      TUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGE
+      TUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGETUkACCGE
+      TUkACCGETTniXYDL1XBkG4u3nSQz1QeAKzGdGdOm4o1V8cqy4zx0zywAIu01vP7eDj760J24
+      NC2eRRZCiD6t/wRATRUjpsxl+vC0nm9EIjS3dACgrDArFy1lzA334EQO/kIIcSn9JAAU9Y0h
+      csa4LrGIxZFtazHzJlM6OI3TJ/9KKZRSZxbr+r9lWde4zEJcmuyLIt76SQBYmJrJgY1rOGbo
+      uBJTGD1mLNlpCWhAqKOFQ/t3sLUiwn33jUY/6+Q/Go1immb3/yORCNFoFIejn1RdDFiWZREK
+      heJdDGFj/eQoaHDzfZ8AQFkmDVWHWfz+e9x1/0dJAywzSjAYQCntvI4fl6tnq0EphWEYJCQk
+      XJ+iC3ERhmHg9Xrx+XzxLoqwqX53FZCmG2QVFJPjiVDX6gfAl5LFuCkzmTJYZ9mGPZhndfkI
+      IYS4sP4RAJEOKmobMK3OPtNYuI2moEZ60pkzJ00zKJk6F2/dbrYfqevR7y+EEOJ8/aMLyOGi
+      rWI7u7d24HTpBP1hxt50G1kJDgg4SPB5ANAMN/PvuYc/vfQGQ/M+TaZPrgQSQoiL0ZTNTpUD
+      gQCxWIzk5OR4F0XYXHl5OQUFBTIGIOKmf3QBCSGE6HUSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      YVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEIIYVMSAEII
+      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
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 3' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
