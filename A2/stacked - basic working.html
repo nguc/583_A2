@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -11,13 +12,14 @@
 }
 
 </style>
+<script src="https://d3js.org/d3.v4.js"></script>
 <body>
 
 <div id="stackedbars">
   <h1>Segments</h1>
-  <svg id="stacked" width="600" height="500"></svg></div>
-</body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+  <svg id="stacked" width="1500" height="750"></svg></div>
+
+
 <script>
 
 var svg = d3.select("#stacked"),
@@ -26,16 +28,6 @@ var svg = d3.select("#stacked"),
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // var margin = {top: 20, right: 150, bottom: 50, left: 40},
-    //     width = 600 - margin.left - marginStacked.right,
-    //     height = 500 - margin.top - marginStacked.bottom;
-    //
-    //
-    // var svg = d3.select("#stacked").append("svg")
-    //     .attr("width", widthStacked + marginStacked.left + marginStacked.right)
-    //     .attr("height", heightStacked + marginStacked.top + marginStacked.bottom)
-    //   .append("g")
-    //     .attr("transform", "translate(" + marginStacked.left + "," + marginStacked.top + ")");
 
 var x = d3.scaleBand()
     .rangeRound([0, width])
@@ -50,12 +42,12 @@ var z = d3.scaleOrdinal(d3.schemeCategory20);
 
 var stack = d3.stack();
 
-d3.csv("segments_table2.csv", type, function(error, data) {
+d3.csv("desc1.csv", type, function(error, data) {
   if (error) throw error;
 
   data.sort(function(a, b) { return b.total - a.total; });
 
-  x.domain(data.map(function(d) { return d.ethnicity; }));
+  x.domain(data.map(function(d) { return d.year; }));
   y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
   z.domain(data.columns.slice(1));
 
@@ -67,7 +59,7 @@ d3.csv("segments_table2.csv", type, function(error, data) {
     .selectAll("rect")
     .data(function(d) { return d; })
     .enter().append("rect")
-      .attr("x", function(d) { return x(d.data.ethnicity); })
+      .attr("x", function(d) { return x(d.data.year); })
       .attr("y", function(d) { return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
       .attr("width", x.bandwidth());
@@ -86,7 +78,7 @@ d3.csv("segments_table2.csv", type, function(error, data) {
       .attr("dy", "0.35em")
       .attr("text-anchor", "start")
       .attr("fill", "#000")
-      .text("Population");
+      .text("Amount purchased");
 
   var legend = g.selectAll(".legend")
     .data(data.columns.slice(1).reverse())
