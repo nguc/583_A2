@@ -1,34 +1,68 @@
-
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+  <Title>Chi Nguyen #10032932</Title>
+  <h2>UK Food Trend</h2>
+</head>
 <style>
 
-.bar {
-  fill: steelblue;
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
-.axis path {
-  /*display: none;*/
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
 }
 
 </style>
 <script src="https://d3js.org/d3.v4.js"></script>
+<script src="d3-tip.js"></script>
 <body>
 
 <div id="stackedbars">
-  <h1>Segments</h1>
-  <svg id="stacked" width="1500" height="750"></svg></div>
-
+<svg id="stacked" width="1300" height="750"></svg></div>
 
 <script>
-
+// set up the svg
 var svg = d3.select("#stacked"),
     margin = {top: 20, right: 180, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
+// set the x, y, and colour scale (z) for the chart
 var x = d3.scaleBand()
     .rangeRound([0, width])
     .padding(0.3)
@@ -38,10 +72,20 @@ var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 
 var z = d3.scaleOrdinal(d3.schemeCategory20);
-    // .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
+// initialize the stack
 var stack = d3.stack();
 
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    var value = d[1] - d[0];
+    return "<strong>Amount:</strong> <span style='color:red'>" + value + "</span>";
+  })
+  svg.call(tip);
+
+// Get data
 d3.csv("desc1.csv", type, function(error, data) {
   if (error) throw error;
 
@@ -51,10 +95,14 @@ d3.csv("desc1.csv", type, function(error, data) {
   y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
   z.domain(data.columns.slice(1));
 
-  g.selectAll(".serie")
+  var div = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+  g.selectAll(".series")
     .data(stack.keys(data.columns.slice(1))(data))
     .enter().append("g")
-      .attr("class", "serie")
+      .attr("class", "series")
       .attr("fill", function(d) { return z(d.key); })
     .selectAll("rect")
     .data(function(d) { return d; })
@@ -62,15 +110,20 @@ d3.csv("desc1.csv", type, function(error, data) {
       .attr("x", function(d) { return x(d.data.year); })
       .attr("y", function(d) { return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-      .attr("width", x.bandwidth());
+      .attr("width", x.bandwidth())
+      // add mouse stuff
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+                        
+      // end mouse stuff
 
   g.append("g")
-      .attr("class", "axis axis--x")
+      .attr("class", "axis--x")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
   g.append("g")
-      .attr("class", "axis axis--y")
+      .attr("class", "axis--y")
       .call(d3.axisLeft(y).ticks(10, "s"))
     .append("text")
       .attr("x", 2)
@@ -80,6 +133,7 @@ d3.csv("desc1.csv", type, function(error, data) {
       .attr("fill", "#000")
       .text("Amount purchased");
 
+  // Make the legend for the categories on the stack
   var legend = g.selectAll(".legend")
     .data(data.columns.slice(1).reverse())
     .enter().append("g")
